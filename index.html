@@ -1,0 +1,25 @@
+<div id="container">
+
+    <p id="one">this is the 1st para</p>
+    <p id="two">this is the 2nd para</p>
+    <p id="three">this is the 3rd para</p>
+<ol>
+    <li>item one</li>
+    <li class="special">item two</li>
+    <li>item three </li>
+</ol>
+
+<div id="mydiv"></div>
+<button id="myButton">Click me</button>
+</div>
+
+<script>
+    var one=document.getElementById("two");
+    console.log(one.textContent);
+    var three=document.getElementById("three");
+    three.textContent="updated 3rd para";
+    var mydiv=document.getElementById("mydiv");
+    mydiv.innerHTML="<strong>this is bold text</strong>";
+    var specialItem=document.querySelector(".special");
+    console.log(specialItem.textContent);
+</script>
