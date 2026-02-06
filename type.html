@@ -1,0 +1,12 @@
+<input placeholder="Enter anything" id="input" onkeyup="showInput(event)">
+<h1 id="output"></h1>
+
+<script>
+var input=document.getElementById("input");
+var output=document.getElementById("output");
+function showInput(event){
+    var data=event.target.value
+    output.textContent=data
+  
+}
+</script>
